@@ -1,5 +1,5 @@
-gestion_user:
-    resource: "@GestionUserBundle/Resources/config/routing.yml"
+emm_user:
+    resource: "@EMMUserBundle/Resources/config/routing.yml"
     prefix:   /
 
 app:

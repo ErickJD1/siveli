@@ -4,14 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
+class ComposerStaticInit2f7d094f9a109d1b74c9822fa3b955d8
 {
     public static $files = array (
-        '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'ce89ac35a6c330c55f4710717db9ff78' => __DIR__ . '/..' . '/kriswallsmith/assetic/src/functions.php',
         '3fad0ebbff9928a94a9d8941fb314bd8' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/Intl/Resources/stubs/functions.php',
     );
@@ -28,9 +27,9 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
             'Symfony\\Bridge\\Twig\\' => 20,
             'Symfony\\Bridge\\Swiftmailer\\' => 27,
             'Symfony\\Bridge\\ProxyManager\\' => 28,
-            'Symfony\\Bridge\\PhpUnit\\' => 23,
             'Symfony\\Bridge\\Monolog\\' => 23,
             'Symfony\\Bridge\\Doctrine\\' => 24,
+            'SymfonyStandard\\' => 16,
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
         ),
         'P' => 
@@ -41,13 +40,27 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
         array (
             'Monolog\\' => 8,
         ),
+        'K' => 
+        array (
+            'Knp\\Bundle\\PaginatorBundle\\' => 27,
+        ),
         'I' => 
         array (
             'Incenteev\\ParameterHandler\\' => 27,
         ),
+        'F' => 
+        array (
+            'FOS\\ElasticaBundle\\' => 19,
+        ),
+        'E' => 
+        array (
+            'Elastica\\' => 9,
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
             'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
@@ -90,10 +103,6 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
         array (
             0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/ProxyManager',
         ),
-        'Symfony\\Bridge\\PhpUnit\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/phpunit-bridge',
-        ),
         'Symfony\\Bridge\\Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/Monolog',
@@ -101,6 +110,10 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
         'Symfony\\Bridge\\Doctrine\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/Doctrine',
+        ),
+        'SymfonyStandard\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/SymfonyStandard',
         ),
         'Sensio\\Bundle\\FrameworkExtraBundle\\' => 
         array (
@@ -114,13 +127,33 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Knp\\Bundle\\PaginatorBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-paginator-bundle',
+        ),
         'Incenteev\\ParameterHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
         ),
+        'FOS\\ElasticaBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/elastica-bundle',
+        ),
+        'Elastica\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ruflin/elastica/lib/Elastica',
+        ),
         'Doctrine\\Common\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 
         array (
@@ -159,6 +192,13 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
                 0 => __DIR__ . '/..' . '/sensiolabs/security-checker',
             ),
         ),
+        'K' => 
+        array (
+            'Knp\\Component' => 
+            array (
+                0 => __DIR__ . '/..' . '/knplabs/knp-components/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\ORM\\' => 
@@ -180,14 +220,6 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
             'Doctrine\\Common\\Collections\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
-            ),
-            'Doctrine\\Common\\Annotations\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
-            ),
-            'Doctrine\\Common\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/common/lib',
             ),
         ),
         'A' => 
@@ -211,11 +243,11 @@ class ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb29366d06001f72832e3c7c13ce9d0c5::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2f7d094f9a109d1b74c9822fa3b955d8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2f7d094f9a109d1b74c9822fa3b955d8::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit2f7d094f9a109d1b74c9822fa3b955d8::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit2f7d094f9a109d1b74c9822fa3b955d8::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit2f7d094f9a109d1b74c9822fa3b955d8::$classMap;
 
         }, null, ClassLoader::class);
     }
